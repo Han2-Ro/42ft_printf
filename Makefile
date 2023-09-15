@@ -6,7 +6,7 @@
 #    By: hrother <hrother@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/04 12:56:10 by hrother           #+#    #+#              #
-#    Updated: 2023/09/14 17:20:25 by hrother          ###   ########.fr        #
+#    Updated: 2023/09/15 22:24:32 by hrother          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,12 +25,6 @@ all: $(NAME)
 $(OBJ_DIR)/%.o: %.c
 	@mkdir -p $(OBJ_DIR) #maybe delete this in clean
 	$(CC) $(CFLAGS) -c $< -o $@
-
-debug: CFLAGS += -g;
-debug: debug.a
-
-debug.a:
-	ar rcs debug.a $(OBJS)
 
 clean:
 	rm -f $(OBJS)
