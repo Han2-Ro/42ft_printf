@@ -6,13 +6,13 @@
 /*   By: hrother <hrother@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 17:05:17 by hrother           #+#    #+#             */
-/*   Updated: 2023/09/16 19:28:06 by hrother          ###   ########.fr       */
+/*   Updated: 2023/09/16 19:38:40 by hrother          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_print_uli(unsigned long n, char *base)
+int	ft_print_uli(unsigned long n, char *base)
 {
 	int				c_count;
 	char			c;
@@ -25,11 +25,11 @@ int ft_print_uli(unsigned long n, char *base)
 	return (c_count);
 }
 
-int	ft_print_p(void *ptr, char *base)
+int	ft_print_p(void *ptr)
 {
 	int	c_count;
 
 	c_count = ft_print_s("0x");
-	c_count += ft_print_uli((unsigned long)ptr, base);
+	c_count += ft_print_uli((unsigned long)ptr, LOWCASE_HEX);
 	return (c_count);
 }
