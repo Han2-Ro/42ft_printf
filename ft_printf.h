@@ -6,7 +6,7 @@
 /*   By: hrother <hrother@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 17:26:07 by hrother           #+#    #+#             */
-/*   Updated: 2023/09/16 19:11:48 by hrother          ###   ########.fr       */
+/*   Updated: 2023/09/16 19:24:49 by hrother          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,10 @@
 
 int	ft_printf(const char *str, ...);
 
+int	ft_print_c(char c);
+int	ft_print_s(char *s);
 int	ft_print_i(int n);
 int	ft_print_x(unsigned int n, char *base);
 int	ft_print_u(unsigned int n);
-int	ft_print_p(unsigned long n, char *base);
+int	ft_print_p(void *ptr, char *base);
 #endif
