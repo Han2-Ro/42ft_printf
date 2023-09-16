@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftprintf.h                                      :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hrother <hrother@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 17:26:07 by hrother           #+#    #+#             */
-/*   Updated: 2023/09/16 18:41:34 by hrother          ###   ########.fr       */
+/*   Updated: 2023/09/16 19:11:48 by hrother          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
+#ifndef FTPRINTF_H
+# define FTPRINTF_H
 
 # include "libft/libft.h"
 # include <stdarg.h>
@@ -33,5 +33,5 @@ int	ft_printf(const char *str, ...);
 int	ft_print_i(int n);
 int	ft_print_x(unsigned int n, char *base);
 int	ft_print_u(unsigned int n);
-int	ft_print_p(void *ptr, char *base);
+int	ft_print_p(unsigned long n, char *base);
 #endif

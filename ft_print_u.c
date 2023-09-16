@@ -6,11 +6,11 @@
 /*   By: hrother <hrother@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 17:05:17 by hrother           #+#    #+#             */
-/*   Updated: 2023/09/16 18:03:12 by hrother          ###   ########.fr       */
+/*   Updated: 2023/09/16 19:08:25 by hrother          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_print_u(unsigned int n)
 {
