@@ -6,7 +6,7 @@
 #    By: hrother <hrother@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/04 12:56:10 by hrother           #+#    #+#              #
-#    Updated: 2023/09/16 18:41:50 by hrother          ###   ########.fr        #
+#    Updated: 2023/09/16 19:04:55 by hrother          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,7 @@ $(LIBFT):
 
 clean:
 	rm -f $(OBJS)
-	rmdir $(OBJ_DIR)
+	if [ -d $(OBJ_DIR) ]; then rmdir $(OBJ_DIR); fi
 	
 fclean: clean #maybe call clean from libft
 	rm -f $(NAME)
