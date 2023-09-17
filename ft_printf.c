@@ -6,21 +6,11 @@
 /*   By: hrother <hrother@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 15:38:56 by hrother           #+#    #+#             */
-/*   Updated: 2023/09/16 19:51:23 by hrother          ###   ########.fr       */
+/*   Updated: 2023/09/17 14:03:09 by hrother          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
-int	ft_print_c(char c)
-{
-	return (write(1, &c, 1));
-}
-
-int	ft_print_s(char *s)
-{
-	return (write(1, s, ft_strlen(s)));
-}
 
 /*
 int	set_flags(char *s, t_flags *flags)
