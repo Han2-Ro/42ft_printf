@@ -6,7 +6,7 @@
 /*   By: hrother <hrother@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 15:38:56 by hrother           #+#    #+#             */
-/*   Updated: 2023/09/17 14:03:09 by hrother          ###   ########.fr       */
+/*   Updated: 2023/09/17 14:24:43 by hrother          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,9 @@ int	ft_convert(const char *str, va_list args)
 		return (ft_print_p(va_arg(args, void *)));
 	else if (*str == '%')
 		return (ft_print_c(*str));
-	return (0);
+	ft_print_c('%');
+	ft_print_c(*str);
+	return (2);
 }
 
 int	ft_printf(const char *str, ...)
