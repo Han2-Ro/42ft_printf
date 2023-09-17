@@ -6,27 +6,12 @@
 /*   By: hrother <hrother@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 15:38:56 by hrother           #+#    #+#             */
-/*   Updated: 2023/09/17 14:24:43 by hrother          ###   ########.fr       */
+/*   Updated: 2023/09/17 15:20:45 by hrother          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-/*
-int	set_flags(char *s, t_flags *flags)
-{
-	int	i;
-
-	flags->force_sign = 0;
-	flags-> = 0;
-	while (1)
-	{
-
-		if (*s == '.')
-		(*s)++
-	}
-}
-*/
 int	ft_convert(const char *str, va_list args)
 {
 	if (*str == 'c')
