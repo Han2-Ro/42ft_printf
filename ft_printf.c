@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hrother <hrother@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hrother <hrother@student.42vienna.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 15:38:56 by hrother           #+#    #+#             */
-/*   Updated: 2023/09/17 15:20:45 by hrother          ###   ########.fr       */
+/*   Updated: 2023/10/02 16:46:58 by hrother          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,8 @@ int	ft_printf(const char *str, ...)
 	va_list	args;
 	int		c_count;
 
+	if (!str)
+		return (-1);
 	va_start(args, str);
 	c_count = 0;
 	while (*str)
